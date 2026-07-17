@@ -1,0 +1,15 @@
+name: Repository CI
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  repository-ci:
+    name: repository-ci
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "repository control check passed"
